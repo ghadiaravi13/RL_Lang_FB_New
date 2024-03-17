@@ -1,0 +1,1 @@
+we missed adding special tokens to FB text in chkpt_1, so we add that and rerun to see if that matters
