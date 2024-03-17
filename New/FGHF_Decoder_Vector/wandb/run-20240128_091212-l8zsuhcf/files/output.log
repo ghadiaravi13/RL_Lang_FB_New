@@ -1,0 +1,151 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/125 [00:00<?, ?it/s]
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.5949                                                                                                  | 6/125 [01:27<29:10, 14.71s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+
+
+
+
+ 10%|██████████████▎                                                                                                                                | 5/50 [04:27<31:41, 42.25s/it]INFO:__main__:[step 5] model checkpoint saved
+INFO:__main__:Evaluating [step 5] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 5] rewards = 0.6384                                                                                                  | 6/125 [01:26<28:48, 14.53s/it]
+INFO:__main__:Best ckpt updated to [step 5]
+
+
+
+
+ 20%|████████████████████████████▍                                                                                                                 | 10/50 [09:06<28:38, 42.95s/it]INFO:__main__:[step 10] model checkpoint saved
+INFO:__main__:Evaluating [step 10] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 10] rewards = 0.3266                                                                                                 | 6/125 [01:27<29:16, 14.76s/it]
+ 22%|███████████████████████████████▏                                                                                                              | 11/50 [11:20<46:01, 70.80s/it]Exception ignored in: <generator object tqdm.__iter__ at 0x7fa4f5926190>
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/tqdm/std.py", line 1210, in __iter__
+    self.close()
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/tqdm/std.py", line 1304, in close
+    fp_write('')
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/tqdm/std.py", line 1301, in fp_write
+    self.fp.write(_unicode(s))
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/tqdm/utils.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2085, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 342, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1425, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 658, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 79, in _publish_output_raw
+    self._publish(rec)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 278, in train
+    self.loss(batch_results, all_mask_weight, rew_id)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 141, in loss
+    policy_forward = self.policy_model.forward_pass(**forward_inputs)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 199, in forward_pass
+    reward_id = None,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/utils/operations.py", line 490, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1747, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 725, in forward
+    hidden_states = self.layer[-1](hidden_states)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 329, in forward
+    hidden_states = hidden_states + self.dropout(forwarded_states)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1189, in _call_impl
+    forward_call = (self._slow_forward if torch._C._get_tracing_state() else self.forward)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 278, in train
+    self.loss(batch_results, all_mask_weight, rew_id)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 141, in loss
+    policy_forward = self.policy_model.forward_pass(**forward_inputs)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 199, in forward_pass
+    reward_id = None,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/utils/operations.py", line 490, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1747, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 725, in forward
+    hidden_states = self.layer[-1](hidden_states)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 329, in forward
+    hidden_states = hidden_states + self.dropout(forwarded_states)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1189, in _call_impl
+    forward_call = (self._slow_forward if torch._C._get_tracing_state() else self.forward)
+KeyboardInterrupt

@@ -1,0 +1,33 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/125 [00:00<?, ?it/s]
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.5949                                                                                                  | 6/125 [01:29<29:38, 14.94s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+  0%|                                                                                                                                                       | 0/50 [02:14<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 366, in train
+    init_head_wt_0 = self.accelerator.unwrap_model(self.policy_model.model).dec_v0_wt
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1269, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'T5ForConditionalGeneration' object has no attribute 'dec_v0_wt'
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 366, in train
+    init_head_wt_0 = self.accelerator.unwrap_model(self.policy_model.model).dec_v0_wt
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1269, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'T5ForConditionalGeneration' object has no attribute 'dec_v0_wt'

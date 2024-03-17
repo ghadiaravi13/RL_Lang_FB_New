@@ -1,0 +1,140 @@
+{
+    "os": "Linux-4.19.0-26-cloud-amd64-x86_64-with-glibc2.28",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-02-25T07:12:43.164619",
+    "startedAt": "2024-02-25T07:12:42.779934",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "tasks/qa_feedback/training/fine_grained_config.yml"
+    ],
+    "state": "running",
+    "program": "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "codePath": "New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "git": {
+        "remote": "https://github.com/ghadiaravi13/RL_Language_Feedback/",
+        "commit": "9c6751944fe8cf765abde259c5847cea60ebeaeb"
+    },
+    "email": "ghadiaravi13@gmail.com",
+    "root": "/home/jupyter/Ravi_new/RL_Language_Feedback",
+    "host": "raja-a100-rl-1",
+    "username": "raja",
+    "executable": "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/bin/python3.9",
+    "cpu_count": 16,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2299.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2299.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 48.97825241088867,
+        "used": 35.2017822265625
+    },
+    "gpu": "Tesla V100-SXM2-16GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla V100-SXM2-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 118.03852081298828
+    }
+}

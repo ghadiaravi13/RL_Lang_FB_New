@@ -1,0 +1,45 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  0%|                                                                                                                                                      | 0/250 [00:00<?, ?it/s]
+  0%|                                                                                                                                                       | 0/50 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py", line 172, in train
+    self.valid(step=step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py", line 433, in valid
+    results = self.policy_model.sample(
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/policy.py", line 112, in sample
+    encoder_cache = unwrapped_model(input_ids=prompts_input_ids,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1695, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1067, in forward
+    layer_module = self.vector_heads[vector_head]
+TypeError: list indices must be integers or slices, not NoneType
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py", line 172, in train
+    self.valid(step=step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py", line 433, in valid
+    results = self.policy_model.sample(
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/policy.py", line 112, in sample
+    encoder_cache = unwrapped_model(input_ids=prompts_input_ids,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1695, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/transformers/models/t5/modeling_t5.py", line 1067, in forward
+    layer_module = self.vector_heads[vector_head]
+TypeError: list indices must be integers or slices, not NoneType

@@ -1,0 +1,41 @@
+  0%|                                                                                          | 0/50 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 171, in train
+    self.save(step=step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 551, in save
+    self.accelerator.save(result, f"{self.args['logging']['save_dir']}/last.pth")
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/accelerator.py", line 1595, in save
+    save(obj, f)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/utils/other.py", line 97, in save
+    torch.save(obj, f)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 422, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 309, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 287, in __init__
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory ./tasks/qa_feedback/model_outputs/FG_vectorRL_const_lr_5e-5_temp_2.0_triple_rew does not exist.
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 171, in train
+    self.save(step=step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 551, in save
+    self.accelerator.save(result, f"{self.args['logging']['save_dir']}/last.pth")
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/accelerator.py", line 1595, in save
+    save(obj, f)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/accelerate/utils/other.py", line 97, in save
+    torch.save(obj, f)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 422, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 309, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/serialization.py", line 287, in __init__
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory ./tasks/qa_feedback/model_outputs/FG_vectorRL_const_lr_5e-5_temp_2.0_triple_rew does not exist.

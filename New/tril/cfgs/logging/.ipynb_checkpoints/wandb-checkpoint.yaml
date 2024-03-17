@@ -1,0 +1,5 @@
+# @package _global_
+
+log_to_wandb: False
+entity_name: rl-lang-fb
+project_name: TRIL_UltraFB

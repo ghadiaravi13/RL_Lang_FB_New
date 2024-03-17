@@ -1,0 +1,36 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/250 [00:00<?, ?it/s]
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.3670                                                                                                  | 6/250 [01:17<57:06, 14.04s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:373: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_0_1 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_0), softmaxed_wt_1)
+/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/functional.py:2916: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:374: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_1_2 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_1), softmaxed_wt_2)
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:375: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_0_2 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_0), softmaxed_wt_2)
+  2%|██▊                                                                                                                                         | 1/50 [02:21<1:55:28, 141.40s/it]INFO:__main__:KL divergence 32.39455795288086 exceeds threshold 10.0
+  4%|█████▋                                                                                                                                       | 2/50 [03:02<1:06:02, 82.55s/it]INFO:__main__:KL divergence 197.49009704589844 exceeds threshold 10.0
+  6%|████████▌                                                                                                                                      | 3/50 [03:42<49:30, 63.21s/it]INFO:__main__:KL divergence 145.9129180908203 exceeds threshold 10.0
+  8%|███████████▍                                                                                                                                   | 4/50 [04:13<38:33, 50.28s/it]INFO:__main__:KL divergence 110.97289276123047 exceeds threshold 10.0
+ 10%|██████████████▎                                                                                                                                | 5/50 [04:42<32:03, 42.74s/it]INFO:__main__:[step 5] model checkpoint saved
+INFO:__main__:Evaluating [step 5] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 5] rewards = -0.5354                                                                                                 | 6/250 [01:23<56:59, 14.01s/it]
+INFO:__main__:KL divergence 129.66421508789062 exceeds threshold 10.0
+ 10%|██████████████                                                                                                                               | 5/50 [06:48<1:01:19, 81.76s/it]
+Early stopping triggered. Terminating training.

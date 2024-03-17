@@ -1,0 +1,147 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/250 [00:00<?, ?it/s]
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.3670                                                                                                  | 6/250 [01:16<56:14, 13.83s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:373: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_0_1 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_0), softmaxed_wt_1)
+/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/torch/nn/functional.py:2916: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:374: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_1_2 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_1), softmaxed_wt_2)
+/home/jupyter/Ravi_new/RL_Language_Feedback/New/FineGrainedRLHF/fgrlhf/ppo.py:375: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  lm_head_kl_div_0_2 = torch.nn.KLDivLoss()(F.log_softmax(softmaxed_wt_0), softmaxed_wt_2)
+
+
+
+
+
+ 10%|██████████████▎                                                                                                                                | 5/50 [04:14<30:51, 41.15s/it]INFO:__main__:[step 5] model checkpoint saved
+INFO:__main__:Evaluating [step 5] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 5] rewards = 0.3670                                                                                                  | 6/250 [01:17<56:52, 13.99s/it]
+
+
+
+
+ 20%|████████████████████████████▍                                                                                                                 | 10/50 [08:34<27:06, 40.66s/it]INFO:__main__:[step 10] model checkpoint saved
+INFO:__main__:Evaluating [step 10] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 10] rewards = 0.3670                                                                                                 | 6/250 [01:17<56:41, 13.94s/it]
+
+
+
+
+ 30%|██████████████████████████████████████████▌                                                                                                   | 15/50 [12:44<23:03, 39.54s/it]INFO:__main__:[step 15] model checkpoint saved
+INFO:__main__:Evaluating [step 15] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 15] rewards = 0.3649                                                                                                 | 6/250 [01:17<57:04, 14.04s/it]
+
+
+
+
+ 40%|████████████████████████████████████████████████████████▊                                                                                     | 20/50 [17:07<20:50, 41.67s/it]INFO:__main__:[step 20] model checkpoint saved
+INFO:__main__:Evaluating [step 20] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 20] rewards = 0.3001                                                                                                 | 6/250 [01:18<58:34, 14.40s/it]
+
+
+
+
+ 50%|███████████████████████████████████████████████████████████████████████                                                                       | 25/50 [21:09<16:12, 38.90s/it]INFO:__main__:[step 25] model checkpoint saved
+INFO:__main__:Evaluating [step 25] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 25] rewards = 0.3359                                                                                                 | 6/250 [01:17<57:56, 14.25s/it]
+
+
+
+
+ 60%|█████████████████████████████████████████████████████████████████████████████████████▏                                                        | 30/50 [25:18<12:52, 38.63s/it]INFO:__main__:[step 30] model checkpoint saved
+INFO:__main__:Evaluating [step 30] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 30] rewards = 0.3333                                                                                                 | 6/250 [01:18<58:23, 14.36s/it]
+
+
+
+
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                                          | 35/50 [29:23<09:34, 38.31s/it]INFO:__main__:[step 35] model checkpoint saved
+INFO:__main__:Evaluating [step 35] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 35] rewards = 0.2867                                                                                                 | 6/250 [01:20<58:38, 14.42s/it]
+
+
+
+
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                            | 40/50 [33:42<06:50, 41.01s/it]INFO:__main__:[step 40] model checkpoint saved
+INFO:__main__:Evaluating [step 40] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 40] rewards = 0.3333                                                                                                 | 6/250 [01:17<57:34, 14.16s/it]
+
+
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 45/50 [38:01<03:26, 41.35s/it]INFO:__main__:[step 45] model checkpoint saved
+INFO:__main__:Evaluating [step 45] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 45] rewards = 0.3268                                                                                                 | 6/250 [01:17<57:42, 14.19s/it]
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [42:09<00:00, 50.60s/it]

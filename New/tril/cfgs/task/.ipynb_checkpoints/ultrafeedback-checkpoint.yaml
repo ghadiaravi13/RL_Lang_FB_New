@@ -1,0 +1,45 @@
+# @package _global_
+
+task:
+  id: ultrafeedback
+  args:
+    tokenizer_id: meta-llama/Llama-2-7b-chat-hf
+    offline_RL: True
+    max_prompt_length: 100
+    max_ref_length: 400
+
+sampling:
+  batch_size_per_process: 2
+  #batch_size_per_process: 36
+  max_prompt_len: 100
+  max_gen_len: 400
+  prompt_padding_side: left
+  prompt_truncation_side: left
+  context_padding_side: right
+  context_truncation_side: right
+  train_generation_kwargs:
+    do_sample: True
+    max_new_tokens: ${sampling.max_gen_len}
+  eval_generation_kwargs:
+    do_sample: False
+    max_new_tokens: ${sampling.max_gen_len}
+
+reward_fn:
+  id: offline_reward
+  args:
+    nothing_arg: 1
+  
+eval_metrics:
+  # - id: rm_model
+  #   args: 
+  #     tokenizer_id: EleutherAI/gpt-j-6B
+  #     batch_size: 5
+  - id: meteor
+  - id: bleu
+  - id: bleurt
+  # - id: bert_score
+  #   args:
+  #     language: "en"
+  # - id: rouge
+  #   args:
+  #     use_single_ref: True # note there is only 1 ref

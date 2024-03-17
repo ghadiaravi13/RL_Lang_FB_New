@@ -1,0 +1,291 @@
+2024-01-28 09:39:14,440 INFO    StreamThr :21646 [internal.py:wandb_internal():86] W&B internal server running at pid: 21646, started at: 2024-01-28 09:39:14.439600
+2024-01-28 09:39:14,441 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status
+2024-01-28 09:39:14,451 INFO    WriterThread:21646 [datastore.py:open_for_write():85] open: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/run-m3363jc5.wandb
+2024-01-28 09:39:14,452 DEBUG   SenderThread:21646 [sender.py:send():369] send: header
+2024-01-28 09:39:14,618 DEBUG   SenderThread:21646 [sender.py:send():369] send: run
+2024-01-28 09:39:14,780 INFO    SenderThread:21646 [dir_watcher.py:__init__():211] watching files in: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files
+2024-01-28 09:39:14,781 INFO    SenderThread:21646 [sender.py:_start_run_threads():1100] run started: m3363jc5 with start time 1706434754.445084
+2024-01-28 09:39:14,781 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: summary_record
+2024-01-28 09:39:14,781 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-28 09:39:14,786 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: check_version
+2024-01-28 09:39:14,786 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: check_version
+2024-01-28 09:39:14,904 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: run_start
+2024-01-28 09:39:14,920 DEBUG   HandlerThread:21646 [system_info.py:__init__():31] System info init
+2024-01-28 09:39:14,920 DEBUG   HandlerThread:21646 [system_info.py:__init__():46] System info init done
+2024-01-28 09:39:14,920 INFO    HandlerThread:21646 [system_monitor.py:start():181] Starting system monitor
+2024-01-28 09:39:14,921 INFO    SystemMonitor:21646 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-01-28 09:39:14,921 INFO    HandlerThread:21646 [system_monitor.py:probe():201] Collecting system info
+2024-01-28 09:39:14,922 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started cpu monitoring
+2024-01-28 09:39:14,922 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started disk monitoring
+2024-01-28 09:39:14,923 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started gpu monitoring
+2024-01-28 09:39:14,924 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started memory monitoring
+2024-01-28 09:39:14,925 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started network monitoring
+2024-01-28 09:39:14,944 DEBUG   HandlerThread:21646 [system_info.py:probe():195] Probing system
+2024-01-28 09:39:14,950 DEBUG   HandlerThread:21646 [system_info.py:_probe_git():180] Probing git
+2024-01-28 09:39:14,963 DEBUG   HandlerThread:21646 [system_info.py:_probe_git():188] Probing git done
+2024-01-28 09:39:14,964 DEBUG   HandlerThread:21646 [system_info.py:probe():240] Probing system done
+2024-01-28 09:39:14,964 DEBUG   HandlerThread:21646 [system_monitor.py:probe():210] {'os': 'Linux-4.19.0-25-cloud-amd64-x86_64-with-glibc2.28', 'python': '3.9.18', 'heartbeatAt': '2024-01-28T09:39:14.944671', 'startedAt': '2024-01-28T09:39:14.429337', 'docker': None, 'cuda': None, 'args': ('--config', 'tasks/qa_feedback/training/fine_grained_config.yml'), 'state': 'running', 'program': '/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'codePath': 'New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'git': {'remote': 'https://github.com/ghadiaravi13/RL_Language_Feedback/', 'commit': '131a4af94347bc8f62df9bc63ceef3603f0bd4a1'}, 'email': 'ghadiaravi13@gmail.com', 'root': '/home/jupyter/Ravi_new/RL_Language_Feedback', 'host': 'raja-a100-rl', 'username': 'raja', 'executable': '/home/jupyter/Ravi_new/.conda/envs/fghf_py39/bin/python3.9', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2200.216, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 48.97825241088867, 'used': 40.31681442260742}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 334.5991020202637}}
+2024-01-28 09:39:14,964 INFO    HandlerThread:21646 [system_monitor.py:probe():211] Finished collecting system info
+2024-01-28 09:39:14,964 INFO    HandlerThread:21646 [system_monitor.py:probe():214] Publishing system info
+2024-01-28 09:39:14,964 DEBUG   HandlerThread:21646 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-28 09:39:14,964 DEBUG   HandlerThread:21646 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-28 09:39:14,964 DEBUG   HandlerThread:21646 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-01-28 09:39:14,968 ERROR   HandlerThread:21646 [system_info.py:_save_conda():85] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/internal/system/system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 1837, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-01-28 09:39:14,969 DEBUG   HandlerThread:21646 [system_info.py:_save_conda():86] Saving conda packages done
+2024-01-28 09:39:14,970 INFO    HandlerThread:21646 [system_monitor.py:probe():216] Finished publishing system info
+2024-01-28 09:39:14,976 DEBUG   SenderThread:21646 [sender.py:send():369] send: files
+2024-01-28 09:39:14,976 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-01-28 09:39:14,983 DEBUG   SenderThread:21646 [sender.py:send():369] send: telemetry
+2024-01-28 09:39:15,025 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:39:15,025 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:39:15,026 DEBUG   SenderThread:21646 [sender.py:send():369] send: telemetry
+2024-01-28 09:39:15,026 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:39:15,026 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:39:15,026 WARNING SenderThread:21646 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-01-28 09:39:15,026 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:39:15,026 WARNING SenderThread:21646 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-01-28 09:39:15,026 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:39:15,248 INFO    wandb-upload_0:21646 [upload_job.py:push():133] Uploaded file /tmp/tmpesgk36a2wandb/e87mmb7c-wandb-metadata.json
+2024-01-28 09:39:15,782 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/requirements.txt
+2024-01-28 09:39:15,782 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-summary.json
+2024-01-28 09:39:15,783 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-metadata.json
+2024-01-28 09:39:15,783 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/conda-environment.yaml
+2024-01-28 09:39:18,782 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:39:20,299 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:20,783 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:39:24,784 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:39:26,017 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:29,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:39:29,982 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:39:31,086 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:36,591 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:36,788 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:39:41,592 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:44,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:39:44,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:39:47,079 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:51,797 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/config.yaml
+2024-01-28 09:39:52,797 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:39:56,677 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:39:59,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:39:59,982 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:40:02,105 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:06,802 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:07,783 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:12,784 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:14,925 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-01-28 09:40:14,927 DEBUG   SenderThread:21646 [sender.py:send():369] send: stats
+2024-01-28 09:40:14,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:40:14,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:40:18,040 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:23,041 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:26,810 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:28,423 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:29,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:40:29,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:40:34,055 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:38,815 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:39,295 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:44,296 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:44,928 DEBUG   SenderThread:21646 [sender.py:send():369] send: stats
+2024-01-28 09:40:44,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:40:44,982 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:40:50,111 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:52,308 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: log_artifact
+2024-01-28 09:40:52,308 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: log_artifact
+2024-01-28 09:40:52,381 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-28 09:40:52,820 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:52,820 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json
+2024-01-28 09:40:52,821 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/media/table
+2024-01-28 09:40:52,821 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/media
+2024-01-28 09:40:52,821 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/media/table/eval_generation
+2024-01-28 09:40:52,982 INFO    wandb-upload_0:21646 [upload_job.py:push():91] Uploaded file /home/raja/.local/share/wandb/artifacts/staging/tmpbgoy67ul
+2024-01-28 09:40:53,045 INFO    wandb-upload_1:21646 [upload_job.py:push():133] Uploaded file /tmp/tmpesgk36a2wandb/wioyso4k-media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json
+2024-01-28 09:40:53,257 INFO    SenderThread:21646 [sender.py:send_request_log_artifact():1414] logged artifact run-m3363jc5-eval_generationstep_0 - {'id': 'QXJ0aWZhY3Q6NzA1NTI5MDQx', 'digest': 'b6df624dda32cf97450ac98f22c53983', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDUxNDU0Nw==', 'latestArtifact': None}, 'version': 'latest'}
+2024-01-28 09:40:53,258 DEBUG   SenderThread:21646 [sender.py:send():369] send: files
+2024-01-28 09:40:53,258 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json with policy now
+2024-01-28 09:40:53,258 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,258 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: metric
+2024-01-28 09:40:53,259 DEBUG   SenderThread:21646 [sender.py:send():369] send: history
+2024-01-28 09:40:53,260 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: summary_record
+2024-01-28 09:40:53,260 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-28 09:40:53,541 INFO    wandb-upload_0:21646 [upload_job.py:push():133] Uploaded file /tmp/tmpesgk36a2wandb/x009ax00-media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json
+2024-01-28 09:40:53,821 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-summary.json
+2024-01-28 09:40:54,821 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:55,884 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:40:56,822 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:40:59,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:40:59,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:41:01,085 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:06,085 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:11,086 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:14,929 DEBUG   SenderThread:21646 [sender.py:send():369] send: stats
+2024-01-28 09:41:14,982 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:41:14,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:41:16,087 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:21,093 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:21,835 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/config.yaml
+2024-01-28 09:41:26,312 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:29,983 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-28 09:41:29,983 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: stop_status
+2024-01-28 09:41:32,028 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:33,109 DEBUG   SenderThread:21646 [sender.py:send():369] send: exit
+2024-01-28 09:41:33,110 INFO    SenderThread:21646 [sender.py:send_exit():574] handling exit code: 1
+2024-01-28 09:41:33,110 INFO    SenderThread:21646 [sender.py:send_exit():576] handling runtime: 138
+2024-01-28 09:41:33,115 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-28 09:41:33,115 INFO    SenderThread:21646 [sender.py:send_exit():582] send defer
+2024-01-28 09:41:33,116 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,116 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 0
+2024-01-28 09:41:33,116 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,116 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 0
+2024-01-28 09:41:33,116 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 1
+2024-01-28 09:41:33,116 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,116 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 1
+2024-01-28 09:41:33,117 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,117 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 1
+2024-01-28 09:41:33,117 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 2
+2024-01-28 09:41:33,117 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,117 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 2
+2024-01-28 09:41:33,117 INFO    HandlerThread:21646 [system_monitor.py:finish():190] Stopping system monitor
+2024-01-28 09:41:33,118 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-01-28 09:41:33,118 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-28 09:41:33,118 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-01-28 09:41:33,118 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined disk monitor
+2024-01-28 09:41:33,216 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-28 09:41:33,216 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined memory monitor
+2024-01-28 09:41:33,216 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined network monitor
+2024-01-28 09:41:33,217 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,217 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 2
+2024-01-28 09:41:33,217 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 3
+2024-01-28 09:41:33,217 DEBUG   SenderThread:21646 [sender.py:send():369] send: stats
+2024-01-28 09:41:33,218 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,218 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 3
+2024-01-28 09:41:33,218 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,218 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 3
+2024-01-28 09:41:33,218 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 4
+2024-01-28 09:41:33,219 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,219 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 4
+2024-01-28 09:41:33,219 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,219 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 4
+2024-01-28 09:41:33,219 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 5
+2024-01-28 09:41:33,219 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,219 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 5
+2024-01-28 09:41:33,220 DEBUG   SenderThread:21646 [sender.py:send():369] send: summary
+2024-01-28 09:41:33,220 INFO    SenderThread:21646 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-28 09:41:33,220 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,220 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 5
+2024-01-28 09:41:33,221 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 6
+2024-01-28 09:41:33,221 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,221 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 6
+2024-01-28 09:41:33,221 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,221 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 6
+2024-01-28 09:41:33,221 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 7
+2024-01-28 09:41:33,221 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: status_report
+2024-01-28 09:41:33,221 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:33,221 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 7
+2024-01-28 09:41:33,221 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:33,222 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 7
+2024-01-28 09:41:33,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-summary.json
+2024-01-28 09:41:34,110 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-28 09:41:34,481 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 8
+2024-01-28 09:41:34,481 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: poll_exit
+2024-01-28 09:41:34,481 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:34,481 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 8
+2024-01-28 09:41:34,482 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:34,482 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 8
+2024-01-28 09:41:34,482 INFO    SenderThread:21646 [job_builder.py:build():232] Attempting to build job artifact
+2024-01-28 09:41:34,482 INFO    SenderThread:21646 [job_builder.py:build():256] is repo sourced job
+2024-01-28 09:41:34,485 INFO    SenderThread:21646 [job_builder.py:build():297] adding wandb-job metadata file
+2024-01-28 09:41:34,526 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 9
+2024-01-28 09:41:34,526 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:34,526 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 9
+2024-01-28 09:41:34,527 DEBUG   SenderThread:21646 [sender.py:send():369] send: artifact
+2024-01-28 09:41:34,770 INFO    wandb-upload_1:21646 [upload_job.py:push():88] Skipped uploading /home/raja/.local/share/wandb/artifacts/staging/tmp07qllqhv
+2024-01-28 09:41:34,843 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:41:34,943 INFO    wandb-upload_0:21646 [upload_job.py:push():91] Uploaded file /home/raja/.local/share/wandb/artifacts/staging/tmp5i8o6kzd
+2024-01-28 09:41:35,110 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-28 09:41:35,401 INFO    SenderThread:21646 [sender.py:send_artifact():1450] sent artifact job-https___github.com_ghadiaravi13_RL_Language_Feedback__New_F.._Decoder_Vector_tasks_qa_feedback_training_train_finegrained.py - {'id': 'QXJ0aWZhY3Q6NzA1NTI5NTI0', 'digest': '972d6c02d32fc0090ab75c9d5ea4eb60', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDUwOTA4MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzA1NTIwNjIx', 'versionIndex': 1}}, 'version': 'latest'}
+2024-01-28 09:41:35,401 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:35,401 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 9
+2024-01-28 09:41:35,401 INFO    SenderThread:21646 [dir_watcher.py:finish():359] shutting down directory watcher
+2024-01-28 09:41:35,844 INFO    SenderThread:21646 [dir_watcher.py:finish():389] scan: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files
+2024-01-28 09:41:35,845 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-metadata.json wandb-metadata.json
+2024-01-28 09:41:35,845 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/requirements.txt requirements.txt
+2024-01-28 09:41:35,845 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-summary.json wandb-summary.json
+2024-01-28 09:41:35,853 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/conda-environment.yaml conda-environment.yaml
+2024-01-28 09:41:35,860 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/config.yaml config.yaml
+2024-01-28 09:41:35,861 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log output.log
+2024-01-28 09:41:35,874 INFO    SenderThread:21646 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json media/table/eval_generation/step_0_0_a9e564c76dccd4a48731.table.json
+2024-01-28 09:41:35,875 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 10
+2024-01-28 09:41:35,876 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: poll_exit
+2024-01-28 09:41:35,876 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:35,876 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 10
+2024-01-28 09:41:35,877 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:35,877 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 10
+2024-01-28 09:41:35,877 INFO    SenderThread:21646 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-28 09:41:36,018 INFO    wandb-upload_0:21646 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/wandb-summary.json
+2024-01-28 09:41:36,070 INFO    wandb-upload_1:21646 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/requirements.txt
+2024-01-28 09:41:36,112 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-28 09:41:36,112 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: poll_exit
+2024-01-28 09:41:36,146 INFO    wandb-upload_3:21646 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/output.log
+2024-01-28 09:41:36,260 INFO    wandb-upload_2:21646 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/files/config.yaml
+2024-01-28 09:41:36,461 INFO    Thread-11 :21646 [sender.py:transition_state():602] send defer: 11
+2024-01-28 09:41:36,461 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:36,461 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 11
+2024-01-28 09:41:36,462 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:36,462 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 11
+2024-01-28 09:41:36,462 INFO    SenderThread:21646 [file_pusher.py:join():164] waiting for file pusher
+2024-01-28 09:41:36,462 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 12
+2024-01-28 09:41:36,462 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:36,462 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 12
+2024-01-28 09:41:36,462 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:36,463 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 12
+2024-01-28 09:41:36,486 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 13
+2024-01-28 09:41:36,486 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:36,487 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 13
+2024-01-28 09:41:36,487 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:36,487 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 13
+2024-01-28 09:41:36,487 INFO    SenderThread:21646 [sender.py:transition_state():602] send defer: 14
+2024-01-28 09:41:36,487 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: defer
+2024-01-28 09:41:36,487 INFO    HandlerThread:21646 [handler.py:handle_request_defer():170] handle defer: 14
+2024-01-28 09:41:36,488 DEBUG   SenderThread:21646 [sender.py:send():369] send: final
+2024-01-28 09:41:36,488 DEBUG   SenderThread:21646 [sender.py:send():369] send: footer
+2024-01-28 09:41:36,488 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: defer
+2024-01-28 09:41:36,488 INFO    SenderThread:21646 [sender.py:send_request_defer():598] handle sender defer: 14
+2024-01-28 09:41:36,489 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-28 09:41:36,489 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: poll_exit
+2024-01-28 09:41:36,489 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-28 09:41:36,490 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: poll_exit
+2024-01-28 09:41:36,490 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: server_info
+2024-01-28 09:41:36,490 DEBUG   SenderThread:21646 [sender.py:send_request():396] send_request: server_info
+2024-01-28 09:41:36,493 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: get_summary
+2024-01-28 09:41:36,493 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: sampled_history
+2024-01-28 09:41:36,504 INFO    MainThread:21646 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2024-01-28 09:41:36,505 INFO    MainThread:21646 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2024-01-28 09:41:36,505 INFO    MainThread:21646 [wandb_run.py:_footer_sync_info():3426] logging synced files
+2024-01-28 09:41:36,505 DEBUG   HandlerThread:21646 [handler.py:handle_request():144] handle_request: shutdown
+2024-01-28 09:41:36,505 INFO    HandlerThread:21646 [handler.py:finish():854] shutting down handler
+2024-01-28 09:41:37,490 INFO    WriterThread:21646 [datastore.py:close():298] close: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240128_093914-m3363jc5/run-m3363jc5.wandb
+2024-01-28 09:41:37,504 INFO    SenderThread:21646 [sender.py:finish():1526] shutting down sender
+2024-01-28 09:41:37,504 INFO    SenderThread:21646 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-28 09:41:37,504 INFO    SenderThread:21646 [file_pusher.py:join():164] waiting for file pusher

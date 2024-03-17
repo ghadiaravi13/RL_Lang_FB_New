@@ -1,0 +1,73 @@
+2024-02-25 07:07:19,072 INFO    StreamThr :2039 [internal.py:wandb_internal():86] W&B internal server running at pid: 2039, started at: 2024-02-25 07:07:19.072335
+2024-02-25 07:07:19,075 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: status
+2024-02-25 07:07:19,085 INFO    WriterThread:2039 [datastore.py:open_for_write():85] open: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/run-2r3d4yno.wandb
+2024-02-25 07:07:19,085 DEBUG   SenderThread:2039 [sender.py:send():369] send: header
+2024-02-25 07:07:19,154 DEBUG   SenderThread:2039 [sender.py:send():369] send: run
+2024-02-25 07:07:19,270 INFO    SenderThread:2039 [dir_watcher.py:__init__():211] watching files in: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files
+2024-02-25 07:07:19,270 INFO    SenderThread:2039 [sender.py:_start_run_threads():1100] run started: 2r3d4yno with start time 1708844839.077504
+2024-02-25 07:07:19,272 DEBUG   SenderThread:2039 [sender.py:send_request():396] send_request: summary_record
+2024-02-25 07:07:19,272 INFO    SenderThread:2039 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-02-25 07:07:19,277 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: check_version
+2024-02-25 07:07:19,278 DEBUG   SenderThread:2039 [sender.py:send_request():396] send_request: check_version
+2024-02-25 07:07:19,355 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: run_start
+2024-02-25 07:07:19,371 DEBUG   HandlerThread:2039 [system_info.py:__init__():31] System info init
+2024-02-25 07:07:19,372 DEBUG   HandlerThread:2039 [system_info.py:__init__():46] System info init done
+2024-02-25 07:07:19,372 INFO    HandlerThread:2039 [system_monitor.py:start():181] Starting system monitor
+2024-02-25 07:07:19,372 INFO    SystemMonitor:2039 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-02-25 07:07:19,372 INFO    HandlerThread:2039 [system_monitor.py:probe():201] Collecting system info
+2024-02-25 07:07:19,373 INFO    SystemMonitor:2039 [interfaces.py:start():190] Started cpu monitoring
+2024-02-25 07:07:19,374 INFO    SystemMonitor:2039 [interfaces.py:start():190] Started disk monitoring
+2024-02-25 07:07:19,375 INFO    SystemMonitor:2039 [interfaces.py:start():190] Started gpu monitoring
+2024-02-25 07:07:19,376 INFO    SystemMonitor:2039 [interfaces.py:start():190] Started memory monitoring
+2024-02-25 07:07:19,377 INFO    SystemMonitor:2039 [interfaces.py:start():190] Started network monitoring
+2024-02-25 07:07:19,397 DEBUG   HandlerThread:2039 [system_info.py:probe():195] Probing system
+2024-02-25 07:07:19,404 DEBUG   HandlerThread:2039 [system_info.py:_probe_git():180] Probing git
+2024-02-25 07:07:19,419 DEBUG   HandlerThread:2039 [system_info.py:_probe_git():188] Probing git done
+2024-02-25 07:07:19,419 DEBUG   HandlerThread:2039 [system_info.py:probe():240] Probing system done
+2024-02-25 07:07:19,419 DEBUG   HandlerThread:2039 [system_monitor.py:probe():210] {'os': 'Linux-4.19.0-26-cloud-amd64-x86_64-with-glibc2.28', 'python': '3.9.18', 'heartbeatAt': '2024-02-25T07:07:19.397947', 'startedAt': '2024-02-25T07:07:19.061655', 'docker': None, 'cuda': None, 'args': ('--config', 'tasks/qa_feedback/training/fine_grained_config.yml'), 'state': 'running', 'program': '/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'codePath': 'New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'git': {'remote': 'https://github.com/ghadiaravi13/RL_Language_Feedback/', 'commit': '9c6751944fe8cf765abde259c5847cea60ebeaeb'}, 'email': 'ghadiaravi13@gmail.com', 'root': '/home/jupyter/Ravi_new/RL_Language_Feedback', 'host': 'raja-a100-rl-1', 'username': 'raja', 'executable': '/home/jupyter/Ravi_new/.conda/envs/fghf_py39/bin/python3.9', 'cpu_count': 16, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2299.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}, {'current': 2299.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 48.97825241088867, 'used': 35.20003890991211}, 'gpu': 'Tesla V100-SXM2-16GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'Tesla V100-SXM2-16GB', 'memory_total': 17179869184}, {'name': 'Tesla V100-SXM2-16GB', 'memory_total': 17179869184}, {'name': 'Tesla V100-SXM2-16GB', 'memory_total': 17179869184}, {'name': 'Tesla V100-SXM2-16GB', 'memory_total': 17179869184}], 'memory': {'total': 118.03852081298828}}
+2024-02-25 07:07:19,419 INFO    HandlerThread:2039 [system_monitor.py:probe():211] Finished collecting system info
+2024-02-25 07:07:19,419 INFO    HandlerThread:2039 [system_monitor.py:probe():214] Publishing system info
+2024-02-25 07:07:19,419 DEBUG   HandlerThread:2039 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-02-25 07:07:19,420 DEBUG   HandlerThread:2039 [system_info.py:_save_pip():67] Saving pip packages done
+2024-02-25 07:07:19,420 DEBUG   HandlerThread:2039 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-02-25 07:07:19,423 ERROR   HandlerThread:2039 [system_info.py:_save_conda():85] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/internal/system/system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 1837, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-02-25 07:07:19,425 DEBUG   HandlerThread:2039 [system_info.py:_save_conda():86] Saving conda packages done
+2024-02-25 07:07:19,425 INFO    HandlerThread:2039 [system_monitor.py:probe():216] Finished publishing system info
+2024-02-25 07:07:19,433 DEBUG   SenderThread:2039 [sender.py:send():369] send: files
+2024-02-25 07:07:19,433 INFO    SenderThread:2039 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-02-25 07:07:19,441 DEBUG   SenderThread:2039 [sender.py:send():369] send: telemetry
+2024-02-25 07:07:19,441 DEBUG   SenderThread:2039 [sender.py:send():369] send: metric
+2024-02-25 07:07:19,441 DEBUG   SenderThread:2039 [sender.py:send():369] send: telemetry
+2024-02-25 07:07:19,441 DEBUG   SenderThread:2039 [sender.py:send():369] send: metric
+2024-02-25 07:07:19,441 DEBUG   SenderThread:2039 [sender.py:send():369] send: metric
+2024-02-25 07:07:19,441 WARNING SenderThread:2039 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-02-25 07:07:19,442 DEBUG   SenderThread:2039 [sender.py:send():369] send: metric
+2024-02-25 07:07:19,442 WARNING SenderThread:2039 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-02-25 07:07:19,442 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: stop_status
+2024-02-25 07:07:19,442 DEBUG   SenderThread:2039 [sender.py:send_request():396] send_request: stop_status
+2024-02-25 07:07:19,666 INFO    wandb-upload_0:2039 [upload_job.py:push():133] Uploaded file /tmp/tmpwiujzr0nwandb/fumv2s1z-wandb-metadata.json
+2024-02-25 07:07:20,272 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/wandb-summary.json
+2024-02-25 07:07:20,273 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/requirements.txt
+2024-02-25 07:07:20,273 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/wandb-metadata.json
+2024-02-25 07:07:20,273 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/conda-environment.yaml
+2024-02-25 07:07:22,271 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/output.log
+2024-02-25 07:07:24,161 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: status_report
+2024-02-25 07:07:24,272 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/output.log
+2024-02-25 07:07:28,274 INFO    Thread-12 :2039 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240225_070719-2r3d4yno/files/output.log
+2024-02-25 07:07:29,828 DEBUG   HandlerThread:2039 [handler.py:handle_request():144] handle_request: status_report
+2024-02-25 07:07:31,382 INFO    memory    :2039 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-02-25 07:07:31,382 DEBUG   SystemMonitor:2039 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-02-25 07:07:31,383 DEBUG   SystemMonitor:2039 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-02-25 07:07:31,383 DEBUG   SystemMonitor:2039 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-02-25 07:07:31,385 DEBUG   SenderThread:2039 [sender.py:send():369] send: stats
+2024-02-25 07:07:32,359 INFO    MainThread:2039 [internal.py:handle_exit():76] Internal process exited

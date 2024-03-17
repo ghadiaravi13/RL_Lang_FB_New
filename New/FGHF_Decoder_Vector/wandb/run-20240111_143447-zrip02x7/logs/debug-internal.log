@@ -1,0 +1,462 @@
+2024-01-11 14:34:47,976 INFO    StreamThr :10068 [internal.py:wandb_internal():86] W&B internal server running at pid: 10068, started at: 2024-01-11 14:34:47.976299
+2024-01-11 14:34:47,980 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status
+2024-01-11 14:34:47,983 INFO    WriterThread:10068 [datastore.py:open_for_write():85] open: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/run-zrip02x7.wandb
+2024-01-11 14:34:47,984 DEBUG   SenderThread:10068 [sender.py:send():369] send: header
+2024-01-11 14:34:48,087 DEBUG   SenderThread:10068 [sender.py:send():369] send: run
+2024-01-11 14:34:48,269 INFO    SenderThread:10068 [dir_watcher.py:__init__():211] watching files in: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files
+2024-01-11 14:34:48,269 INFO    SenderThread:10068 [sender.py:_start_run_threads():1100] run started: zrip02x7 with start time 1704983687.977418
+2024-01-11 14:34:48,269 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:34:48,273 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:34:48,274 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: check_version
+2024-01-11 14:34:48,274 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: check_version
+2024-01-11 14:34:48,392 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: run_start
+2024-01-11 14:34:48,407 DEBUG   HandlerThread:10068 [system_info.py:__init__():31] System info init
+2024-01-11 14:34:48,407 DEBUG   HandlerThread:10068 [system_info.py:__init__():46] System info init done
+2024-01-11 14:34:48,407 INFO    HandlerThread:10068 [system_monitor.py:start():181] Starting system monitor
+2024-01-11 14:34:48,407 INFO    SystemMonitor:10068 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-01-11 14:34:48,407 INFO    HandlerThread:10068 [system_monitor.py:probe():201] Collecting system info
+2024-01-11 14:34:48,408 INFO    SystemMonitor:10068 [interfaces.py:start():190] Started cpu monitoring
+2024-01-11 14:34:48,409 INFO    SystemMonitor:10068 [interfaces.py:start():190] Started disk monitoring
+2024-01-11 14:34:48,410 INFO    SystemMonitor:10068 [interfaces.py:start():190] Started gpu monitoring
+2024-01-11 14:34:48,411 INFO    SystemMonitor:10068 [interfaces.py:start():190] Started memory monitoring
+2024-01-11 14:34:48,412 INFO    SystemMonitor:10068 [interfaces.py:start():190] Started network monitoring
+2024-01-11 14:34:48,431 DEBUG   HandlerThread:10068 [system_info.py:probe():195] Probing system
+2024-01-11 14:34:48,436 DEBUG   HandlerThread:10068 [system_info.py:_probe_git():180] Probing git
+2024-01-11 14:34:48,448 DEBUG   HandlerThread:10068 [system_info.py:_probe_git():188] Probing git done
+2024-01-11 14:34:48,448 DEBUG   HandlerThread:10068 [system_info.py:probe():240] Probing system done
+2024-01-11 14:34:48,448 DEBUG   HandlerThread:10068 [system_monitor.py:probe():210] {'os': 'Linux-4.19.0-25-cloud-amd64-x86_64-with-glibc2.28', 'python': '3.9.18', 'heartbeatAt': '2024-01-11T14:34:48.431345', 'startedAt': '2024-01-11T14:34:47.966096', 'docker': None, 'cuda': None, 'args': ('--config', 'tasks/qa_feedback/training/fine_grained_config.yml'), 'state': 'running', 'program': '/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'codePath': 'New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py', 'git': {'remote': 'https://github.com/ghadiaravi13/RL_Language_Feedback/', 'commit': '17f3a559186c24a162e514b9ed285f2efd083392'}, 'email': 'ghadiaravi13@gmail.com', 'root': '/home/jupyter/Ravi_new/RL_Language_Feedback', 'host': 'raja-a100-rl', 'username': 'raja', 'executable': '/home/jupyter/Ravi_new/.conda/envs/fghf_py39/bin/python3.9', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2200.216, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}, {'current': 2200.216, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 48.97825241088867, 'used': 37.90681076049805}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 334.5991020202637}}
+2024-01-11 14:34:48,449 INFO    HandlerThread:10068 [system_monitor.py:probe():211] Finished collecting system info
+2024-01-11 14:34:48,449 INFO    HandlerThread:10068 [system_monitor.py:probe():214] Publishing system info
+2024-01-11 14:34:48,449 DEBUG   HandlerThread:10068 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-11 14:34:48,457 DEBUG   HandlerThread:10068 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-11 14:34:48,457 DEBUG   HandlerThread:10068 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-01-11 14:34:48,460 ERROR   HandlerThread:10068 [system_info.py:_save_conda():85] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/site-packages/wandb/sdk/internal/system/system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/lib/python3.9/subprocess.py", line 1837, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-01-11 14:34:48,461 DEBUG   HandlerThread:10068 [system_info.py:_save_conda():86] Saving conda packages done
+2024-01-11 14:34:48,462 INFO    HandlerThread:10068 [system_monitor.py:probe():216] Finished publishing system info
+2024-01-11 14:34:48,469 DEBUG   SenderThread:10068 [sender.py:send():369] send: files
+2024-01-11 14:34:48,469 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2024-01-11 14:34:48,475 DEBUG   SenderThread:10068 [sender.py:send():369] send: telemetry
+2024-01-11 14:34:48,517 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:34:48,517 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:34:48,517 DEBUG   SenderThread:10068 [sender.py:send():369] send: telemetry
+2024-01-11 14:34:48,518 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:34:48,518 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:34:48,518 WARNING SenderThread:10068 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-01-11 14:34:48,518 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:34:48,518 WARNING SenderThread:10068 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2024-01-11 14:34:48,518 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:34:48,670 INFO    wandb-upload_0:10068 [upload_job.py:push():133] Uploaded file /tmp/tmpnxxjicikwandb/3wx2otns-wandb-metadata.json
+2024-01-11 14:34:49,270 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-metadata.json
+2024-01-11 14:34:49,271 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/requirements.txt
+2024-01-11 14:34:49,271 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:34:49,271 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/conda-environment.yaml
+2024-01-11 14:34:53,549 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:34:56,271 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:34:58,272 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:34:59,338 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:04,339 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:08,634 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:35:08,634 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:35:09,737 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:10,276 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:35:14,738 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:20,161 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:21,280 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/config.yaml
+2024-01-11 14:35:22,281 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:35:23,632 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:35:23,633 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:35:25,746 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:31,558 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:32,286 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:35:36,559 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:38,632 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:35:38,633 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:35:41,757 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:44,292 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:35:47,752 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:48,412 DEBUG   SystemMonitor:10068 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-01-11 14:35:48,414 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:35:53,415 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:35:53,632 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:35:53,633 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:35:58,299 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:35:58,464 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:03,465 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:08,466 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:08,632 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:36:08,633 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:36:12,305 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:36:13,964 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:18,415 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:36:19,416 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:23,633 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:36:23,633 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:36:24,697 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:26,462 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: log_artifact
+2024-01-11 14:36:26,463 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: log_artifact
+2024-01-11 14:36:26,531 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:36:26,893 INFO    wandb-upload_0:10068 [upload_job.py:push():91] Uploaded file /home/raja/.local/share/wandb/artifacts/staging/tmpgxi7k2ho
+2024-01-11 14:36:27,311 INFO    SenderThread:10068 [sender.py:send_request_log_artifact():1414] logged artifact run-zrip02x7-eval_generationstep_0 - {'id': 'QXJ0aWZhY3Q6Njg4MjMzNzM1', 'digest': 'e284c249294c109419a48e2bbea1937e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyOTM3NDM2NQ==', 'latestArtifact': None}, 'version': 'latest'}
+2024-01-11 14:36:27,311 DEBUG   SenderThread:10068 [sender.py:send():369] send: files
+2024-01-11 14:36:27,311 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json with policy now
+2024-01-11 14:36:27,312 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json
+2024-01-11 14:36:27,312 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,313 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,314 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:36:27,314 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:36:27,314 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:36:27,315 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media
+2024-01-11 14:36:27,315 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation
+2024-01-11 14:36:27,315 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table
+2024-01-11 14:36:27,315 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:36:27,486 INFO    wandb-upload_0:10068 [upload_job.py:push():133] Uploaded file /tmp/tmpnxxjicikwandb/uuezx21p-media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json
+2024-01-11 14:36:27,772 INFO    wandb-upload_0:10068 [upload_job.py:push():133] Uploaded file /tmp/tmpnxxjicikwandb/x21b7uxz-media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json
+2024-01-11 14:36:28,312 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:36:28,313 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:36:30,316 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:35,317 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:38,317 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:36:38,753 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:36:38,753 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:36:40,849 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:45,850 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:48,416 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:36:51,417 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:53,639 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:36:53,640 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:36:56,791 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:36:57,325 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/config.yaml
+2024-01-11 14:37:01,864 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:06,865 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:08,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:37:08,644 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:37:12,776 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:16,712 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:37:16,715 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,715 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,715 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,715 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: metric
+2024-01-11 14:37:16,716 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:37:16,717 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:37:16,719 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:37:17,334 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:37:18,335 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:37:18,417 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:37:18,417 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:23,418 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:23,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:37:23,645 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:37:28,738 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:29,339 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/config.yaml
+2024-01-11 14:37:33,797 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:38,645 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:37:38,645 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:37:39,707 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:44,708 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:48,418 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:37:50,418 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:53,643 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:37:53,644 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:37:55,789 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:37:58,078 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:37:58,080 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:37:58,080 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:37:58,081 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:37:58,353 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:38:00,354 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:38:01,121 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:06,122 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:08,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:38:08,644 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:38:11,701 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:16,702 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:18,418 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:38:22,420 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:23,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:38:23,644 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:38:27,734 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:32,735 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:37,736 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:38,263 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:38:38,265 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:38:38,265 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:38:38,267 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:38:38,370 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:38:38,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:38:38,644 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:38:40,371 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:38:42,817 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:47,818 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:48,420 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:38:53,421 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:38:53,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:38:53,645 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:38:58,688 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:03,689 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:08,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:39:08,645 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:39:08,736 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:39:08,817 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:39:08,817 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:08,817 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:39:08,820 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:39:09,384 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:39:10,385 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:39:13,821 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:18,420 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:39:19,421 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:23,644 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:39:23,645 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:39:24,768 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:29,769 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:34,769 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:38,096 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:39:38,098 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:39:38,098 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:39:38,099 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:39:38,401 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:39:38,965 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:39:38,966 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:39:40,051 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:40,402 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:39:45,052 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:48,422 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:39:50,423 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:39:52,407 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:39:53,740 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:39:53,741 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:39:55,827 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:00,827 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:06,413 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:40:06,429 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:08,740 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:40:08,741 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:40:11,818 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:16,819 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:18,425 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:40:20,419 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:40:22,266 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:23,740 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:40:23,741 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:40:27,786 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:32,787 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:34,425 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:40:38,186 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:38,740 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:40:38,741 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:40:43,866 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:48,423 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:40:48,430 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:40:49,424 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:53,740 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:40:53,741 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:40:54,807 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:40:59,808 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:02,436 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:41:05,105 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:08,741 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:41:08,742 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:41:10,871 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:15,299 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: log_artifact
+2024-01-11 14:41:15,299 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: log_artifact
+2024-01-11 14:41:15,311 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:41:15,441 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json
+2024-01-11 14:41:15,442 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation
+2024-01-11 14:41:15,642 INFO    wandb-upload_0:10068 [upload_job.py:push():91] Uploaded file /home/raja/.local/share/wandb/artifacts/staging/tmpf1pwlab0
+2024-01-11 14:41:15,664 INFO    wandb-upload_1:10068 [upload_job.py:push():133] Uploaded file /tmp/tmpnxxjicikwandb/fkt11g2o-media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json
+2024-01-11 14:41:15,977 INFO    SenderThread:10068 [sender.py:send_request_log_artifact():1414] logged artifact run-zrip02x7-eval_generationstep_5 - {'id': 'QXJ0aWZhY3Q6Njg4MjM3MTkx', 'digest': 'ef817dce1f9daa05fd3edbe4c9cc4e61', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyOTM3NTUxMQ==', 'latestArtifact': None}, 'version': 'latest'}
+2024-01-11 14:41:15,977 DEBUG   SenderThread:10068 [sender.py:send():369] send: files
+2024-01-11 14:41:15,977 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json with policy now
+2024-01-11 14:41:15,978 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:15,978 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:41:15,978 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:41:15,979 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:41:16,277 INFO    wandb-upload_0:10068 [upload_job.py:push():133] Uploaded file /tmp/tmpnxxjicikwandb/flxbbbfe-media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json
+2024-01-11 14:41:16,442 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:41:16,442 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:41:18,424 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:41:18,443 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:41:21,425 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:23,741 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:41:23,742 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:41:26,868 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:31,869 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:36,870 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:38,741 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-11 14:41:38,742 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: stop_status
+2024-01-11 14:41:42,838 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:44,104 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-11 14:41:44,106 DEBUG   SenderThread:10068 [sender.py:send():369] send: history
+2024-01-11 14:41:44,106 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: summary_record
+2024-01-11 14:41:44,109 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:41:44,169 DEBUG   SenderThread:10068 [sender.py:send():369] send: exit
+2024-01-11 14:41:44,170 INFO    SenderThread:10068 [sender.py:send_exit():574] handling exit code: 0
+2024-01-11 14:41:44,170 INFO    SenderThread:10068 [sender.py:send_exit():576] handling runtime: 415
+2024-01-11 14:41:44,170 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:41:44,170 INFO    SenderThread:10068 [sender.py:send_exit():582] send defer
+2024-01-11 14:41:44,171 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,171 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 0
+2024-01-11 14:41:44,171 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,171 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 0
+2024-01-11 14:41:44,171 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 1
+2024-01-11 14:41:44,171 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,171 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 1
+2024-01-11 14:41:44,172 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,172 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 1
+2024-01-11 14:41:44,172 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 2
+2024-01-11 14:41:44,172 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,172 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 2
+2024-01-11 14:41:44,172 INFO    HandlerThread:10068 [system_monitor.py:finish():190] Stopping system monitor
+2024-01-11 14:41:44,172 INFO    HandlerThread:10068 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-11 14:41:44,172 DEBUG   SystemMonitor:10068 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-01-11 14:41:44,173 INFO    HandlerThread:10068 [interfaces.py:finish():202] Joined disk monitor
+2024-01-11 14:41:44,173 DEBUG   SystemMonitor:10068 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-01-11 14:41:44,251 INFO    HandlerThread:10068 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-11 14:41:44,251 INFO    HandlerThread:10068 [interfaces.py:finish():202] Joined memory monitor
+2024-01-11 14:41:44,251 INFO    HandlerThread:10068 [interfaces.py:finish():202] Joined network monitor
+2024-01-11 14:41:44,252 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,252 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 2
+2024-01-11 14:41:44,252 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 3
+2024-01-11 14:41:44,252 DEBUG   SenderThread:10068 [sender.py:send():369] send: stats
+2024-01-11 14:41:44,253 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,253 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 3
+2024-01-11 14:41:44,253 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,253 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 3
+2024-01-11 14:41:44,253 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 4
+2024-01-11 14:41:44,253 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,253 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 4
+2024-01-11 14:41:44,253 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,253 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 4
+2024-01-11 14:41:44,254 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 5
+2024-01-11 14:41:44,254 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,254 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 5
+2024-01-11 14:41:44,254 DEBUG   SenderThread:10068 [sender.py:send():369] send: summary
+2024-01-11 14:41:44,255 INFO    SenderThread:10068 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2024-01-11 14:41:44,255 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,255 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 5
+2024-01-11 14:41:44,255 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 6
+2024-01-11 14:41:44,255 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,255 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 6
+2024-01-11 14:41:44,256 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,256 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 6
+2024-01-11 14:41:44,256 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 7
+2024-01-11 14:41:44,256 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: status_report
+2024-01-11 14:41:44,256 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:44,256 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 7
+2024-01-11 14:41:44,256 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:44,256 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 7
+2024-01-11 14:41:44,453 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:41:45,170 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-11 14:41:46,132 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 8
+2024-01-11 14:41:46,132 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: poll_exit
+2024-01-11 14:41:46,133 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:46,133 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 8
+2024-01-11 14:41:46,133 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:46,133 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 8
+2024-01-11 14:41:46,133 INFO    SenderThread:10068 [job_builder.py:build():232] Attempting to build job artifact
+2024-01-11 14:41:46,133 INFO    SenderThread:10068 [job_builder.py:build():256] is repo sourced job
+2024-01-11 14:41:46,136 INFO    SenderThread:10068 [job_builder.py:build():297] adding wandb-job metadata file
+2024-01-11 14:41:46,141 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 9
+2024-01-11 14:41:46,141 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:46,141 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 9
+2024-01-11 14:41:46,141 DEBUG   SenderThread:10068 [sender.py:send():369] send: artifact
+2024-01-11 14:41:46,172 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-11 14:41:46,432 INFO    wandb-upload_1:10068 [upload_job.py:push():88] Skipped uploading /home/raja/.local/share/wandb/artifacts/staging/tmpk39zbwlu
+2024-01-11 14:41:46,454 INFO    Thread-12 :10068 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:41:46,613 INFO    wandb-upload_0:10068 [upload_job.py:push():91] Uploaded file /home/raja/.local/share/wandb/artifacts/staging/tmpvj7dy9_j
+2024-01-11 14:41:46,991 INFO    SenderThread:10068 [sender.py:send_artifact():1450] sent artifact job-https___github.com_ghadiaravi13_RL_Language_Feedback__New_F.._Decoder_Vector_tasks_qa_feedback_training_train_finegrained.py - {'id': 'QXJ0aWZhY3Q6Njg4MjM3NTYz', 'digest': '0b7eb3494be78dcc77f7f096a91bb64f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODY2NDEyMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg2MDYzMDcy', 'versionIndex': 0}}, 'version': 'latest'}
+2024-01-11 14:41:46,991 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:46,991 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 9
+2024-01-11 14:41:46,991 INFO    SenderThread:10068 [dir_watcher.py:finish():359] shutting down directory watcher
+2024-01-11 14:41:47,455 INFO    SenderThread:10068 [dir_watcher.py:finish():389] scan: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files
+2024-01-11 14:41:47,455 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-metadata.json wandb-metadata.json
+2024-01-11 14:41:47,455 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/requirements.txt requirements.txt
+2024-01-11 14:41:47,456 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json wandb-summary.json
+2024-01-11 14:41:47,458 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/conda-environment.yaml conda-environment.yaml
+2024-01-11 14:41:47,458 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/config.yaml config.yaml
+2024-01-11 14:41:47,459 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log output.log
+2024-01-11 14:41:47,465 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json media/table/eval_generation/step_0_0_aa1c41207494ac544b35.table.json
+2024-01-11 14:41:47,468 INFO    SenderThread:10068 [dir_watcher.py:finish():403] scan save: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json media/table/eval_generation/step_5_6_4d145d3f5e2f69271a86.table.json
+2024-01-11 14:41:47,468 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 10
+2024-01-11 14:41:47,468 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: poll_exit
+2024-01-11 14:41:47,469 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:47,469 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 10
+2024-01-11 14:41:47,469 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:47,469 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 10
+2024-01-11 14:41:47,469 INFO    SenderThread:10068 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-11 14:41:47,655 INFO    wandb-upload_1:10068 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/requirements.txt
+2024-01-11 14:41:47,664 INFO    wandb-upload_2:10068 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/config.yaml
+2024-01-11 14:41:47,685 INFO    wandb-upload_3:10068 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/output.log
+2024-01-11 14:41:47,731 INFO    wandb-upload_0:10068 [upload_job.py:push():133] Uploaded file /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/files/wandb-summary.json
+2024-01-11 14:41:47,932 INFO    Thread-11 :10068 [sender.py:transition_state():602] send defer: 11
+2024-01-11 14:41:47,933 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:47,933 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 11
+2024-01-11 14:41:47,933 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:47,933 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 11
+2024-01-11 14:41:47,933 INFO    SenderThread:10068 [file_pusher.py:join():164] waiting for file pusher
+2024-01-11 14:41:47,933 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 12
+2024-01-11 14:41:47,933 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:47,933 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 12
+2024-01-11 14:41:47,934 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:47,934 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 12
+2024-01-11 14:41:48,026 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 13
+2024-01-11 14:41:48,027 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:48,027 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 13
+2024-01-11 14:41:48,027 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:48,027 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 13
+2024-01-11 14:41:48,027 INFO    SenderThread:10068 [sender.py:transition_state():602] send defer: 14
+2024-01-11 14:41:48,027 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: defer
+2024-01-11 14:41:48,027 INFO    HandlerThread:10068 [handler.py:handle_request_defer():170] handle defer: 14
+2024-01-11 14:41:48,028 DEBUG   SenderThread:10068 [sender.py:send():369] send: final
+2024-01-11 14:41:48,028 DEBUG   SenderThread:10068 [sender.py:send():369] send: footer
+2024-01-11 14:41:48,028 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: defer
+2024-01-11 14:41:48,028 INFO    SenderThread:10068 [sender.py:send_request_defer():598] handle sender defer: 14
+2024-01-11 14:41:48,029 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-11 14:41:48,029 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: poll_exit
+2024-01-11 14:41:48,029 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: server_info
+2024-01-11 14:41:48,029 DEBUG   SenderThread:10068 [sender.py:send_request():396] send_request: server_info
+2024-01-11 14:41:48,032 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: get_summary
+2024-01-11 14:41:48,032 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: sampled_history
+2024-01-11 14:41:48,045 INFO    MainThread:10068 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2024-01-11 14:41:48,046 INFO    MainThread:10068 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2024-01-11 14:41:48,046 INFO    MainThread:10068 [wandb_run.py:_footer_sync_info():3426] logging synced files
+2024-01-11 14:41:48,046 DEBUG   HandlerThread:10068 [handler.py:handle_request():144] handle_request: shutdown
+2024-01-11 14:41:48,046 INFO    HandlerThread:10068 [handler.py:finish():854] shutting down handler
+2024-01-11 14:41:49,030 INFO    WriterThread:10068 [datastore.py:close():298] close: /home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/wandb/run-20240111_143447-zrip02x7/run-zrip02x7.wandb
+2024-01-11 14:41:49,045 INFO    SenderThread:10068 [sender.py:finish():1526] shutting down sender
+2024-01-11 14:41:49,045 INFO    SenderThread:10068 [file_pusher.py:finish():159] shutting down file pusher
+2024-01-11 14:41:49,045 INFO    SenderThread:10068 [file_pusher.py:join():164] waiting for file pusher

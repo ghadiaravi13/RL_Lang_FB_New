@@ -1,0 +1,28 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/125 [00:00<?, ?it/s]
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.5949                                                                                                  | 6/125 [01:28<29:27, 14.85s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+  0%|                                                                                                                                                       | 0/50 [02:14<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 370, in train
+    head_wt_0_delta = (init_head_wt_0 - head_wt_0).sum()
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+Traceback (most recent call last):
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 280, in <module>
+    main()
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 271, in main
+    trainer.train(step)
+  File "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 370, in train
+    head_wt_0_delta = (init_head_wt_0 - head_wt_0).sum()
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

@@ -1,0 +1,251 @@
+wandb_version: 1
+
+vector_RL:
+  desc: null
+  value: 3
+model:
+  desc: null
+  value:
+    policy_model:
+      ckpt: ./tasks/qa_feedback/model_outputs/t5-large-1k-train
+      input_padding_side: right
+      train_generation_kwargs:
+        do_sample: true
+        top_k: 20
+        top_p: null
+        temperature: 2.0
+      eval_generation_kwargs:
+        do_sample: false
+        num_beams: 1
+    value_model:
+      ckpt: t5-base
+      freeze_value_model: false
+      policy_value_sharing: false
+reward:
+  desc: null
+  value:
+    relevance_model:
+      ckpt: ./tasks/qa_feedback/model_outputs/rel_rm
+      positive_reward: 0.3
+      negative_reward: -0.3
+    factuality_model:
+      ckpt: ./tasks/qa_feedback/model_outputs/fact_rm
+      positive_reward: 0.5
+      negative_reward: -0.5
+    completeness_model:
+      ckpt: ./tasks/qa_feedback/model_outputs/comp_rm
+      mean: -0.44677690555995353
+      std: 8.301160619054132
+      bias: 0.0
+      scale: 0.3
+env:
+  desc: null
+  value:
+    max_input_len: 1024
+    max_generated_len: 200
+    train_num_samples_per_input: 4
+ppo:
+  desc: null
+  value:
+    kl_coef: 0.3
+    lam: 0.95
+    gamma: 1.0
+    pg_coef: 1.0
+    vf_coef: 1.0
+    cliprange: 0.2
+    cliprange_value: 0.2
+    whiten_rewards: true
+train:
+  desc: null
+  value:
+    total_episodes: 80000
+    eval_interval: 5
+    sampling_batch_size_per_card: 2
+    training_batch_size_per_card: 4
+    lr: 1.0e-05
+    n_warmup_steps: 0
+    n_ppo_epoch_per_rollout: 1
+    kl_threshold: 10.0
+    clip_grad: false
+    max_grad_norm: 0.5
+    seed: 42
+    cuda_deterministic: true
+logging:
+  desc: null
+  value:
+    run_name: FG_vectorRL_const_lr_1e-5_temp_2.0_decoder_head
+    wandb_log: true
+    wandb_entity: rl-lang-fb
+    wandb_project: FGHF_Vector_RL_Decoder_head
+    log_interval: 1
+    save_dir: ./tasks/qa_feedback/model_outputs/FG_vectorRL_const_lr_1e-5_temp_2.0_decoder_head
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.18
+    cli_version: 0.15.4
+    framework: huggingface
+    huggingface_version: 4.23.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1706433132.536639
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 33
+      - 49
+      - 53
+      - 55
+      - 71
+      2:
+      - 1
+      - 5
+      - 11
+      - 33
+      - 49
+      - 53
+      - 55
+      - 71
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.9.18
+      5: 0.15.4
+      6: 4.23.1
+      8:
+      - 5
+    m:
+    - 1: train/step
+      6:
+      - 3
+    - 1: eval/step
+      6:
+      - 3
+    - 1: eval/rouge
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/rewards
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/verbosity_rew_given
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/factuality_rew_given
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/completeness_rew_given
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/relevance_ratios
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/factuality_ratios
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/completeness_rewards
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/n_sub_sentences
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/n_sentences
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/lengths
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: eval/logprobs
+      5: 2
+      6:
+      - 1
+      7:
+      - 2
+    - 1: train/lr
+      5: 1
+      6:
+      - 1
+    - 1: train/head_wts/var_0
+      5: 1
+      6:
+      - 1
+    - 1: train/head_wts/var_1
+      5: 1
+      6:
+      - 1
+    - 1: train/head_wts/var_2
+      5: 1
+      6:
+      - 1
+    - 1: train/loss/total
+      5: 1
+      6:
+      - 1
+    - 1: train/loss/policy
+      5: 1
+      6:
+      - 1
+    - 1: train/loss/value
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/penalized
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/KL
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/raw
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/verbosity
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/factuality
+      5: 1
+      6:
+      - 1
+    - 1: train/reward/completeness
+      5: 1
+      6:
+      - 1

@@ -1,0 +1,142 @@
+
+  0%|                                                                                                                                                       | 0/50 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                                                      | 0/125 [00:00<?, ?it/s]
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.5949                                                                                                  | 6/125 [01:29<29:33, 14.90s/it]
+INFO:__main__:Best ckpt updated to [step 0]
+
+
+
+
+ 10%|██████████████▎                                                                                                                                | 5/50 [04:40<32:52, 43.83s/it]INFO:__main__:[step 5] model checkpoint saved
+INFO:__main__:Evaluating [step 5] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 5] rewards = 0.8225                                                                                                  | 6/125 [01:29<29:41, 14.97s/it]
+INFO:__main__:Best ckpt updated to [step 5]
+
+
+
+
+ 20%|████████████████████████████▍                                                                                                                 | 10/50 [09:27<29:25, 44.15s/it]INFO:__main__:[step 10] model checkpoint saved
+INFO:__main__:Evaluating [step 10] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 10] rewards = 0.6940                                                                                                 | 6/125 [01:35<30:48, 15.53s/it]
+
+
+
+
+ 30%|██████████████████████████████████████████▌                                                                                                   | 15/50 [14:06<25:30, 43.72s/it]INFO:__main__:[step 15] model checkpoint saved
+INFO:__main__:Evaluating [step 15] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 15] rewards = 0.6883                                                                                                 | 6/125 [01:24<29:28, 14.86s/it]
+
+
+
+
+ 40%|████████████████████████████████████████████████████████▊                                                                                     | 20/50 [18:35<21:30, 43.02s/it]INFO:__main__:[step 20] model checkpoint saved
+INFO:__main__:Evaluating [step 20] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 20] rewards = 0.8900                                                                                                 | 6/125 [01:26<29:46, 15.02s/it]
+INFO:__main__:Best ckpt updated to [step 20]
+
+
+
+
+ 50%|███████████████████████████████████████████████████████████████████████                                                                       | 25/50 [23:18<18:14, 43.79s/it]INFO:__main__:[step 25] model checkpoint saved
+INFO:__main__:Evaluating [step 25] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 25] rewards = 1.0007                                                                                                 | 6/125 [01:29<30:20, 15.30s/it]
+INFO:__main__:Best ckpt updated to [step 25]
+
+
+
+
+ 60%|█████████████████████████████████████████████████████████████████████████████████████▏                                                        | 30/50 [28:05<14:43, 44.19s/it]INFO:__main__:[step 30] model checkpoint saved
+INFO:__main__:Evaluating [step 30] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 30] rewards = 1.1231                                                                                                 | 6/125 [01:29<30:28, 15.36s/it]
+INFO:__main__:Best ckpt updated to [step 30]
+
+
+
+
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                                          | 35/50 [32:50<11:00, 44.04s/it]INFO:__main__:[step 35] model checkpoint saved
+INFO:__main__:Evaluating [step 35] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 35] rewards = 1.0510                                                                                                 | 6/125 [01:28<30:12, 15.23s/it]
+
+
+
+
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                            | 40/50 [37:23<07:12, 43.25s/it]INFO:__main__:[step 40] model checkpoint saved
+INFO:__main__:Evaluating [step 40] ...
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 40] rewards = 1.0088                                                                                                 | 6/125 [01:28<30:15, 15.26s/it]
+
+
+
+
+
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 45/50 [41:56<03:35, 43.12s/it]INFO:__main__:[step 45] model checkpoint saved
+INFO:__main__:Evaluating [step 45] ...
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 45] rewards = 0.8593                                                                                                 | 6/125 [01:30<30:35, 15.42s/it]
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 50/50 [46:31<00:00, 55.83s/it]

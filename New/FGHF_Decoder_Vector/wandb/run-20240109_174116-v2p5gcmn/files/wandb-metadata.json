@@ -1,0 +1,172 @@
+{
+    "os": "Linux-4.19.0-25-cloud-amd64-x86_64-with-glibc2.28",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-01-09T17:41:16.608623",
+    "startedAt": "2024-01-09T17:41:16.171114",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "tasks/qa_feedback/training/fine_grained_config.yml"
+    ],
+    "state": "running",
+    "program": "/home/jupyter/Ravi_new/RL_Language_Feedback/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "codePath": "New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "git": {
+        "remote": "https://github.com/ghadiaravi13/RL_Language_Feedback/",
+        "commit": "c4c28f5c163bf20b75c84a41a5f369e454b7c6b3"
+    },
+    "email": "ghadiaravi13@gmail.com",
+    "root": "/home/jupyter/Ravi_new/RL_Language_Feedback",
+    "host": "raja-a100-rl",
+    "username": "raja",
+    "executable": "/home/jupyter/Ravi_new/.conda/envs/fghf_py39/bin/python3.9",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2200.216,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 48.97825241088867,
+        "used": 37.45121383666992
+    },
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A100-SXM4-80GB",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 334.5991020202637
+    }
+}
