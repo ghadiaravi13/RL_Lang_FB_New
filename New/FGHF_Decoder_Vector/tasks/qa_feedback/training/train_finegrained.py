@@ -35,7 +35,7 @@ logging.basicConfig(level=logging.ERROR)
 from accelerate import DistributedDataParallelKwargs
 
 ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=True) #for allowing unused parameters in the model
-accelerator = accelerate.Accelerator()#kwargs_handlers=[ddp_kwargs])#
+accelerator = accelerate.Accelerator(kwargs_handlers=[ddp_kwargs])#
 # accelerator = accelerate.Accelerator()
 device = accelerator.device
 log = accelerate.logging.get_logger(__name__, log_level='INFO')
@@ -243,12 +243,12 @@ def main():
         tot_batch_size = args['train']['sampling_batch_size_per_card'] * accelerator.num_processes * args['env']['train_num_samples_per_input']
     total_steps = ceil_div(args['train']['total_episodes'], tot_batch_size)
     
-    # scheduler = transformers.get_scheduler(
-    #     name='linear',
-    #     optimizer=optimizer,
-    #     num_warmup_steps=100*args['train']['n_ppo_epoch_per_rollout']*accelerator.num_processes,
-    #     num_training_steps=total_steps*args['train']['n_ppo_epoch_per_rollout']*accelerator.num_processes,
-    # )
+    scheduler = transformers.get_scheduler(
+        name='linear',
+        optimizer=optimizer,
+        num_warmup_steps=100*args['train']['n_ppo_epoch_per_rollout']*accelerator.num_processes,
+        num_training_steps=total_steps*args['train']['n_ppo_epoch_per_rollout']*accelerator.num_processes,
+    )
     from accelerate.utils import MegatronLMDummyScheduler
 
     if accelerator.distributed_type == DistributedType.MEGATRON_LM:
@@ -257,8 +257,8 @@ def main():
             total_num_steps=total_steps,
             warmup_num_steps=0,
         )
-    else:
-        scheduler = transformers.get_constant_schedule(optimizer=optimizer)
+    # else:
+    #     scheduler = transformers.get_constant_schedule(optimizer=optimizer)
     
     optimizer, scheduler = accelerator.prepare(optimizer, scheduler)
 
@@ -279,7 +279,7 @@ def main():
         vector_RL=args['vector_RL'],
     )
     
-    steps = list(range(50))#total_steps + 1))
+    steps = list(range(total_steps + 1))
     steps = tqdm(steps) if accelerator.is_main_process else steps
     for step in steps:
         trainer.train(step)

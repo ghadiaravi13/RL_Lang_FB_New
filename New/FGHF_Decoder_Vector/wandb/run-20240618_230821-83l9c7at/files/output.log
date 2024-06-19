@@ -1,0 +1,206 @@
+
+  0%|                                                                                                                 | 0/5001 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                  | 0/125 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):████████████████████████████████████████████████████████████▊              | 108/125 [36:27<05:48, 20.47s/it]
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1210, in __iter__
+    self.close()
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1304, in close
+    fp_write('')
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1301, in fp_write
+    self.fp.write(_unicode(s))
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/utils.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2085, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 342, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1425, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 658, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 79, in _publish_output_raw
+    self._publish(rec)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 148, in _send_message
+    data = msg.SerializeToString()
+KeyboardInterrupt:
+  0%|                                                                                                                 | 0/5001 [36:44<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 173, in train
+    self.valid(step=step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 442, in valid
+    results = self.policy_model.sample(
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 156, in sample
+    generated_input_ids_temp = unwrapped_model.generate(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/generation_utils.py", line 1390, in generate
+    return self.greedy_search(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/generation_utils.py", line 1785, in greedy_search
+    outputs = self(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1787, in forward
+    decoder_outputs = self.decoder(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 725, in forward
+    hidden_states = self.layer[-1](hidden_states)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1188, in _call_impl
+    def _call_impl(self, *input, **kwargs):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 173, in train
+    self.valid(step=step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 442, in valid
+    results = self.policy_model.sample(
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 156, in sample
+    generated_input_ids_temp = unwrapped_model.generate(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/generation_utils.py", line 1390, in generate
+    return self.greedy_search(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/generation_utils.py", line 1785, in greedy_search
+    outputs = self(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1787, in forward
+    decoder_outputs = self.decoder(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 725, in forward
+    hidden_states = self.layer[-1](hidden_states)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1188, in _call_impl
+    def _call_impl(self, *input, **kwargs):
+KeyboardInterrupt

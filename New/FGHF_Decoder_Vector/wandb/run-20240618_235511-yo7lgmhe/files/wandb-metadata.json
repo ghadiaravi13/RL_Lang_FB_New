@@ -1,0 +1,212 @@
+{
+    "os": "Linux-5.15.0-60-generic-x86_64-with-glibc2.31",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-19T06:55:11.908188",
+    "startedAt": "2024-06-19T06:55:11.453669",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "tasks/qa_feedback/training/fine_grained_config.yml"
+    ],
+    "state": "running",
+    "program": "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "codePath": "New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py",
+    "git": {
+        "remote": "https://github.com/ghadiaravi13/RL_Lang_FB_New",
+        "commit": "19d176b86aa36bc2a82b609d296743e8dfbd6d4c"
+    },
+    "email": null,
+    "root": "/home/ximinglu/RL_Lang_FB_New",
+    "host": "mosaic-elanding-33.reviz.ai2.in",
+    "username": "ximinglu",
+    "executable": "/home/ximinglu/anaconda3/envs/py310/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2.8916250000000003,
+        "min": 800.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2.67,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2.697,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2.483,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2.453,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2.402,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "total": 3666.447250366211,
+        "used": 352.3036003112793
+    },
+    "gpu": "Quadro RTX 8000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 8000",
+            "memory_total": 51539607552
+        },
+        {
+            "name": "Quadro RTX 8000",
+            "memory_total": 51539607552
+        }
+    ],
+    "memory": {
+        "total": 125.55192184448242
+    }
+}

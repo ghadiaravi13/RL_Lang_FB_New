@@ -1,0 +1,4 @@
+name: py310
+channels:
+  - defaults
+prefix: /home/ximinglu/.conda/envs/py310

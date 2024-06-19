@@ -1,0 +1,214 @@
+
+  0%|                                                                                                                 | 0/3335 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                   | 0/21 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+ 52%|███████████████████████████████████████████████████████▌                                                  | 11/21 [02:30<01:49, 10.91s/it]
+
+
+
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = -0.0287█████████████████████████████████████████████████████████████| 21/21 [04:16<00:00,  9.86s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|█▌                                                                                                   | 50/3335 [25:03<22:53:14, 25.08s/it]INFO:__main__:[step 50] model checkpoint saved
+INFO:__main__:Evaluating [step 50] ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 50] rewards = -0.0264████████████████████████████████████████████████████████████| 21/21 [04:09<00:00, 11.39s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  3%|██▉                                                                                                 | 100/3335 [50:09<21:55:10, 24.39s/it]INFO:__main__:[step 100] model checkpoint saved
+INFO:__main__:Evaluating [step 100] ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 100] rewards = -0.0193███████████████████████████████████████████████████████████| 21/21 [03:51<00:00, 11.16s/it]
+
+
+
+
+
+
+
+  3%|███▏                                                                                                | 108/3335 [57:50<28:48:12, 32.13s/it]
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 222, in train
+    ref_policy_forward = self.ref_policy_model.forward_pass(**forward_inputs)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 275, in forward_pass
+    generated_entropy = logits_to_entropy(generated_logits) # (B, output_len)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/utils.py", line 39, in logits_to_entropy
+    distribution = torch.distributions.Categorical(logits=logits)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/distributions/categorical.py", line 66, in __init__
+    super(Categorical, self).__init__(batch_shape, validate_args=validate_args)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/distributions/distribution.py", line 55, in __init__
+    if not valid.all():
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 222, in train
+    ref_policy_forward = self.ref_policy_model.forward_pass(**forward_inputs)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/policy.py", line 275, in forward_pass
+    generated_entropy = logits_to_entropy(generated_logits) # (B, output_len)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/utils.py", line 39, in logits_to_entropy
+    distribution = torch.distributions.Categorical(logits=logits)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/distributions/categorical.py", line 66, in __init__
+    super(Categorical, self).__init__(batch_shape, validate_args=validate_args)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/distributions/distribution.py", line 55, in __init__
+    if not valid.all():
+KeyboardInterrupt

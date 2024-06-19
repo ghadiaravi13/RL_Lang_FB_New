@@ -436,7 +436,7 @@ class PPOTrainer:
         with torch.no_grad():
             # for i, batch in enumerate(tqdm(self.eval_dataloader) if self.accelerator.is_main_process else self.eval_dataloader):
             for i, batch in enumerate(tqdm(self.eval_dataloader) if self.eval_dataloader is not None else {}):
-                if i>5:
+                if i>50:
                     break
                     
                 results = self.policy_model.sample(

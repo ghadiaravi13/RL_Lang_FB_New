@@ -1,0 +1,128 @@
+
+  0%|                                                                                                                  | 0/100 [00:00<?, ?it/s]INFO:__main__:[step 0] model checkpoint saved
+INFO:__main__:Evaluating [step 0] ...
+  torch.tensor(eval_v, device=results['generated_input_ids'].device))                                                   | 0/42 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INFO:__main__:Evaluated [step 0] rewards = 0.2863██████████████████████████████████████████████████████████████| 42/42 [19:28<00:00, 28.46s/it]
+  0%|                                                                                                                  | 0/100 [20:31<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 279, in train
+    self.loss(batch_results, all_mask_weight, rew_id)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 154, in loss
+    value_forward = self.value_model.forward_pass(**forward_inputs)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/value.py", line 76, in forward_pass
+    encoder_cache = self.model(input_ids=prompts_input_ids,
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1747, in forward
+    encoder_outputs = self.encoder(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 579, in forward
+    attention_output = self.SelfAttention(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 542, in forward
+    attn_weights = nn.functional.dropout(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB (GPU 0; 47.45 GiB total capacity; 45.94 GiB already allocated; 19.50 MiB free; 47.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 294, in <module>
+    main()
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/tasks/qa_feedback/training/train_finegrained.py", line 285, in main
+    trainer.train(step)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 279, in train
+    self.loss(batch_results, all_mask_weight, rew_id)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/ppo.py", line 154, in loss
+    value_forward = self.value_model.forward_pass(**forward_inputs)
+  File "/home/ximinglu/RL_Lang_FB_New/New/FGHF_Decoder_Vector/fgrlhf/value.py", line 76, in forward_pass
+    encoder_cache = self.model(input_ids=prompts_input_ids,
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1747, in forward
+    encoder_outputs = self.encoder(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1053, in forward
+    layer_outputs = layer_module(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 579, in forward
+    attention_output = self.SelfAttention(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 542, in forward
+    attn_weights = nn.functional.dropout(
+  File "/home/ximinglu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB (GPU 0; 47.45 GiB total capacity; 45.94 GiB already allocated; 19.50 MiB free; 47.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
