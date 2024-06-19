@@ -27,6 +27,7 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 import transformers
 import accelerate
+from accelerate import Accelerator, DistributedType
 import wandb
 
 from .utils import ensure_dir, set_seed, reduce_mean, reduce_sum, ceil_div, whiten, clamp
@@ -542,8 +543,8 @@ class PPOTrainer:
 
     def save(self, step):
         # this will overwrite an existing ckpt with the save filename!
-        if accelerator.distributed_type == DistributedType.MEGATRON_LM:
-            accelerator.save_state(self.args['logging']['save_dir'])
+        if self.accelerator.distributed_type == DistributedType.MEGATRON_LM:
+            self.accelerator.save_state(self.args['logging']['save_dir'])
         else:
             self.accelerator.wait_for_everyone()
             policy_model_state_dict = self.accelerator.unwrap_model(self.policy_model.model).state_dict()
