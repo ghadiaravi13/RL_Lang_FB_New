@@ -35,8 +35,8 @@ reward:
     scale: 0.3
 
 env:
-  max_input_len: 512
-  max_generated_len: 150
+  max_input_len: 600
+  max_generated_len: 100
   train_num_samples_per_input: 2
 
 ppo:
@@ -54,7 +54,7 @@ train:
   eval_interval: 50
   sampling_batch_size_per_card: 2
   training_batch_size_per_card: 4
-  lr: 5.0e-5
+  lr: 1.0e-5
   n_warmup_steps: 100
   n_ppo_epoch_per_rollout: 4
   kl_threshold: 10.0
@@ -64,9 +64,9 @@ train:
   cuda_deterministic: True
 
 logging:
-  run_name: FG_vectorRL_sep_rew_const_lr_5e-5_temp_10_decoder_head
+  run_name: FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head
   wandb_log: True
   wandb_entity: rl-lang-fb
   wandb_project: Resurrect_FGHF_Vector_RL_Decoder_head
   log_interval: 1
-  save_dir: ./tasks/qa_feedback/model_outputs/FG_vectorRL_sep_rew_const_lr_5e-5_temp_10_decoder_head
+  save_dir: ./tasks/qa_feedback/model_outputs/FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head
