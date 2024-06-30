@@ -2,7 +2,7 @@ vector_RL: 3
 
 model:
   policy_model:
-    ckpt: ./tasks/qa_feedback/model_outputs/t5-large-1k-train
+    ckpt: google/flan-t5-large #./tasks/qa_feedback/model_outputs/t5-large-1k-train
     input_padding_side: right
     train_generation_kwargs:
       do_sample: True
@@ -64,9 +64,9 @@ train:
   cuda_deterministic: True
 
 logging:
-  run_name: FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head
+  run_name: FlanT5-large_FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head
   wandb_log: True
   wandb_entity: rl-lang-fb
   wandb_project: Resurrect_FGHF_Vector_RL_Decoder_head
   log_interval: 1
-  save_dir: ./tasks/qa_feedback/model_outputs/FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head
+  save_dir: ./tasks/qa_feedback/model_outputs/FlanT5-large_FG_vectorRL_sep_rew_const_lr_1e-5_temp_10_decoder_head

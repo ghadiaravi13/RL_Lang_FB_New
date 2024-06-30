@@ -94,9 +94,9 @@ class TextGenDataset(Dataset):
             
         for task_instance in task_data:
             instances.append({
-                "prompt": task_instance['text'],
+                "prompt": "Answer the question based on the context that follows:\n" + task_instance['text'],
                 "metadata": {
-                    "prompt": task_instance['text'],
+                    "prompt": "Answer the question based on the context that follows:\n" + task_instance['text'],
                     "references": task_instance['answer'],
                     "passages": task_instance['passages'],
                     "question": task_instance['question'],}
